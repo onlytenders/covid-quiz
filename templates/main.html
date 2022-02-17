@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='css/images/logo.ico') }}" />
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <div class="test">
+      <div class="wrapper">
+        {% block wrapper %} {% endblock %}
+      </div>
+      <div class="menu">
+        <a href="/{{ lang }}/faq" class="icon"><img class="icon-image"
+          src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/000000/external-faq-distance-mentoring-inipagistudio-mixed-inipagistudio.png"
+        /></a>
+        {% block menu %} {% endblock %}
+        <a href="https://covid19.who.int/" class="icon"><img class="icon-image"
+          src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-statistics-influencer-marketing-wanicon-lineal-color-wanicon.png"
+        /></a>
+      </div>
+    <marquee id="warning" behaviour="scroll" direction="left">
+      {% block warning %}
+      {% endblock %}
+    </marquee>
+    <div class="news_wrapper">
+      <div class="black"></div>
+      <div class="news_popup">
+        <a class="icon" id="news_button"><img class="icon-image"
+          src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/50/000000/external-news-coronavirus-covid19-flatart-icons-lineal-color-flatarticons.png"
+        /></a>
+        <div class="news_list">
+          <h2>{% block news_title %}{% endblock %}</h2>
+          <a href="{{ news[0].link }}" class="news_link" target="_blank">{{ news[0].title }}</a>
+          <div class="line"></div>
+          <a href="{{ news[1].link }}" class="news_link" target="_blank">{{ news[1].title }}</a>
+          <div class="line"></div>
+          <a href="{{ news[2].link }}" class="news_link" target="_blank">{{ news[2].title }}</a>
+          <div class="line"></div>
+          <a href="{{ news[3].link }}" class="news_link" target="_blank">{{ news[3].title }}</a>
+          <div class="line"></div>
+          <a href="{{ news[4].link }}" class="news_link" target="_blank">{{ news[4].title }}</a>
+          <div class="line"></div>
+          <a href="{{ news[5].link }}" class="news_link" target="_blank">{{ news[5].title }}</a>
+          <div class="line"></div>
+          <a href="{{ news[6].link }}" class="news_link" target="_blank">{{ news[6].title }}</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+
+{% block title %}
+Select language
+{% endblock %}
+
+{% block wrapper %}
+<a href="/en" class="icon"><h3>English</h3><img class="icon-image" src="https://img.icons8.com/color/48/000000/great-britain-circular.png" alt=""></a>
+<a href="/ru" class="icon"><h3>Русский</h3><img class="icon-image" src="https://img.icons8.com/fluency/48/000000/russian-federation-circular.png" alt=""></a>
+<a href="/kz" class="icon"><h3>Қазақша</h3><img class="icon-image" src="https://img.icons8.com/color/48/000000/kazakhstan-circular.png" alt=""></a>
+{% endblock %}
+
+{% block menu %}
+{% endblock %}
+
+{% block warning %}
+{% endblock %}
+
+{% block news_title %}
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/scriptLanguages.js') }}"></script>
+{% endblock %}

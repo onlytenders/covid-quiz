@@ -1,0 +1,156 @@
+{% extends 'main.html' %}
+
+{% block title %}
+Тест на COVID-19
+{% endblock %}
+
+{% block wrapper %}
+<form action="#" id="submitForm">
+<h5 id="counter"></h5>
+<h3 id="main_text">Мы подготовили для Вас онлайн тест* по COVID-19: пройдите его, чтобы оценить своё состояние.</h3>
+<div id="div1" class="">
+    <button class="0">НАЧАТЬ!</button>
+</div>
+<div id="div2" class="hidden">
+    <button class="1">Выше</button>
+    <button class="2">Ниже</button>
+</div>
+<div id="div3" class="hidden">
+    <button class="3">Да, сухой кашель</button>
+    <button class="4">Да, влажный кашель</button>
+    <button class="5">Нет кашля</button>
+</div>
+<div id="div4" class="hidden">
+    <button class="6">Да</button>
+    <button class="7">Нет</button>
+</div>
+<div id="div5" class="hidden">
+    <button class="8">Ощущаю</button>
+    <button class="9">Не ощущаю</button>
+</div>
+<div id="div6" class="hidden">
+    <button class="10">Замечаю</button>
+    <button class="11">Не замечаю</button>
+</div>
+<div id="div7" class="hidden">
+    <button class="12">Часто</button>
+    <button class="13">Не часто</button>
+</div>
+<div id="div8" class="hidden">
+    <button class="14">Есть</button>
+    <button class="15">Нет</button>
+</div>
+<div id="div9" class="hidden">
+    <button class="16">Присутствует</button>
+    <button class="17">Не присутствует</button>
+</div>
+<div id="div10" class="hidden">
+    <button class="18">Ощущаю</button>
+    <button class="19">Не ощущаю</button>
+</div>
+<div id="div11" class="hidden">
+    <button class="20">Замечаю</button>
+    <button class="21">Не Замечаю</button>
+</div>
+<div id="div12" class="hidden">
+    <button class="22">Наблюдаются</button>
+    <button class="23">Не наблюдаются</button>
+</div>
+<div id="div13" class="hidden">
+    <button class="24">Наблюдаются</button>
+    <button class="25">Не наблюдаются</button>
+</div>
+<div id="div14" class="hidden">
+    <button class="26">Есть</button>
+    <button class="27">Нет</button>
+</div>
+<div id="div15" class="hidden">
+    <button class="28">Есть</button>
+    <button class="29">Нет</button>
+</div>
+<div id="div16" class="hidden">
+    <button class="30">Замечаю</button>
+    <button class="31">Не замечаю</button>
+</div>
+<div id="div17" class="hidden">
+    <button class="32">Ощущаю</button>
+    <button class="33">Не ощущаю</button>
+</div>
+<div id="div18" class="hidden">
+    <button class="34">Был</button>
+    <button class="35">Не был</button>
+</div>
+<div id="div19" class="hidden">
+    <button class="36">Был</button>
+    <button class="37">Не был</button>
+</div>
+<div id="div20" class="hidden">
+    <button class="38">был</button>
+    <button class="39">Не был</button>
+</div>
+<div id="div21" class="hidden">
+    <button class="40">Бывало</button>
+    <button class="41">Не было</button>
+</div>
+<div id="div22" class="hidden">
+    <button class="42">Да, в маске</button>
+    <button class="43">Да, но без маски</button>
+    <button class="44">Не пребывал</button>
+</div>
+<div id="div23" class="hidden">
+    <button class="45">Да</button>
+    <button class="46">Нет</button>
+</div>
+<div id="div24" class="hidden">
+    <button class="47">Да</button>
+    <button class="48">Нет</button>
+</div>
+<div id="div25" class="hidden">
+    <button class="49">Да</button>
+    <button class="50">Нет</button>
+</div>
+<div id="div26" class="hidden">
+    <button class="51">Да</button>
+    <button class="52">Нет</button>
+</div>
+<div id="div27" class="hidden">
+    <button class="53">Ощущаю</button>
+    <button class="54">Не ощущаю</button>
+</div>
+<div id="div28" class="hidden">
+    <button class="55">Наблюдаю</button>
+    <button class="56">Не наблюдаю</button>
+</div>
+<div id="div29" class="hidden">
+    <button class="57">Замечаю</button>
+    <button class="58">Не замечаю</button>
+</div>
+<div id="div30" class="hidden">
+    <button class="59">Замечаю</button>
+    <button class="60">Не замечаю</button>
+</div>
+<div id="div31" class="hidden">
+    <button class="61">Пройти тест снова</button>
+</div>
+</form>
+{% endblock %}
+
+{% block menu %}
+<div class="languages">
+  <a class="icon" id="mainlang"><img class="icon-image" src="https://img.icons8.com/fluency/48/000000/russian-federation-circular.png"/></a>
+  <a href="/kz" class="icon" id="otherlang1"><img class="icon-image" src="https://img.icons8.com/color/48/000000/kazakhstan-circular.png"/></a>
+  <a href="/en" class="icon" id="otherlang2"><img class="icon-image" src="https://img.icons8.com/color/48/000000/great-britain-circular.png"/></a>
+</div>
+{% endblock %}
+
+{% block warning %}
+*Данный тест не является средством постановки диагноза заболеваний. Тест построен на общемировых доступных данных, модели дообучаются каждый день при появлении новых данных.
+{% endblock %}
+
+{% block news_title %}
+НОВОСТИ
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/scriptRussian.js') }}"></script>
+{% endblock %}

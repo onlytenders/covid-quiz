@@ -1,0 +1,135 @@
+*{
+  text-decoration: none;
+  font-family: 'Exo 2', Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.virus {
+  position: fixed;
+  background: url(images/virus.png) no-repeat;
+  background-size: 100%;
+  opacity: 0.7;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+}
+
+.submit {
+  margin-top: 3%;
+  background-color: white;
+  border: solid 2px;
+  padding: 1% 3%;
+  border-color: #0024A0;
+  color: #0024A0;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.submit:hover {
+  background-color: #001C7B;
+  color: white;
+}
+
+body{
+  background: rgb(0,58,116);
+  background: linear-gradient(180deg, rgba(0,58,116,1) 0%, rgba(0,85,169,1) 50%, rgba(0,114,228,1) 100%);
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  top: calc(50% - 35px);
+  left: 2%;
+}
+
+.faq-button {
+  width: 70px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 5%;
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 2% 1%;
+    border: 2px solid black;
+    opacity: 0.93;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 800px) {
+    .test {
+      padding: 20px 0;
+    }
+    .wrapper {
+      width: 70%;
+      padding: 20px;
+    }
+    #warning {
+      position: relative;
+    }
+    button{
+      display: block;
+      width: 100px;
+    }
+    /* .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13,.div14, .div15, .div16, .div17, .div18, .div19, .div20, .div21, .div22, .div23, .div24, .div25, .div26, .div27 .div28, .div29 {
+      display: flex;
+      flex-direction: column;
+    } */
+    .div2 {
+      display: flex;
+      flex-direction: row;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+  width: 90%;
+  font-weight: normal;
+  font-size: 90%;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: white;
+    border-color: #0024A0;
+    color: #0024A0;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+button:hover {
+  background-color: #001C7B;
+  color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#warning {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

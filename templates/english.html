@@ -1,0 +1,156 @@
+{% extends 'main.html' %}
+
+{% block title %}COVID-19 test{% endblock %}
+
+{% block wrapper %}
+<form action="#" id="submitForm">
+<h5 id="counter"></h5>
+<h3 id="main_text">
+  We made an online COVID-19 test* for you: take it in order to assess your health condition
+</h3>
+<div id="div1" class="">
+    <button class="0">START!</button>
+</div>
+<div id="div2" class="hidden">
+    <button class="1">Yes, I do</button>
+    <button class="2">No, I don't</button>
+</div>
+<div id="div3" class="hidden">
+    <button class="3">Yes, dry cough</button>
+    <button class="4">Yes, moist cough</button>
+    <button class="5">No, I don't</button>
+</div>
+<div id="div4" class="hidden">
+    <button class="6">Yes, I do</button>
+    <button class="7">No, I don't</button>
+</div>
+<div id="div5" class="hidden">
+    <button class="8">Yes, I do</button>
+    <button class="9">No, I don't</button>
+</div>
+<div id="div6" class="hidden">
+    <button class="10">Yes, I do</button>
+    <button class="11">No, I don't</button>
+</div>
+<div id="div7" class="hidden">
+    <button class="12">Yes, I do</button>
+    <button class="13">No, I don't</button>
+</div>
+<div id="div8" class="hidden">
+    <button class="14">Yes, I do</button>
+    <button class="15">No, I don't</button>
+</div>
+<div id="div9" class="hidden">
+    <button class="16">Yes, I do</button>
+    <button class="17">No, I don't</button>
+</div>
+<div id="div10" class="hidden">
+    <button class="18">Yes, I do</button>
+    <button class="19">No, I don't</button>
+</div>
+<div id="div11" class="hidden">
+    <button class="20">Yes, I do</button>
+    <button class="21">No, I don't</button>
+</div>
+<div id="div12" class="hidden">
+    <button class="22">Yes, I do</button>
+    <button class="23">No, I don't</button>
+</div>
+<div id="div13" class="hidden">
+    <button class="24">Yes, I do</button>
+    <button class="25">No, I don't</button>
+</div>
+<div id="div14" class="hidden">
+    <button class="26">Yes, I do</button>
+    <button class="27">No, I don't</button>
+</div>
+<div id="div15" class="hidden">
+    <button class="28">Yes, I do</button>
+    <button class="29">No, I don't</button>
+</div>
+<div id="div16" class="hidden">
+    <button class="30">Yes, I do</button>
+    <button class="31">No, I don't</button>
+</div>
+<div id="div17" class="hidden">
+    <button class="32">Yes, I have</button>
+    <button class="33">No, I haven't</button>
+</div>
+<div id="div18" class="hidden">
+    <button class="34">Yes, I have</button>
+    <button class="35">No, I haven't</button>
+</div>
+<div id="div19" class="hidden">
+    <button class="36">Yes, I have</button>
+    <button class="37">No, I haven't</button>
+</div>
+<div id="div20" class="hidden">
+    <button class="38">Yes, I have</button>
+    <button class="39">No, I haven't</button>
+</div>
+<div id="div21" class="hidden">
+    <button class="40">Yes, I had.</button>
+    <button class="41">No, I had not.</button>
+</div>
+<div id="div22" class="hidden">
+    <button class="42">Yes, I was in mask</button>
+    <button class="43">Yes, but without mask</button>
+    <button class="44">No, I haven't</button>
+</div>
+<div id="div23" class="hidden">
+    <button class="45">Yes, I do</button>
+    <button class="46">No, I don't</button>
+</div>
+<div id="div24" class="hidden">
+    <button class="47">Yes, I do</button>
+    <button class="48">No, I don't</button>
+</div>
+<div id="div25" class="hidden">
+    <button class="49">Yes, I do</button>
+    <button class="50">No, I don't</button>
+</div>
+<div id="div26" class="hidden">
+    <button class="51">Yes, I do</button>
+    <button class="52">No, I don't</button>
+</div>
+<div id="div27" class="hidden">
+    <button class="53">Yes, I do</button>
+    <button class="54">No, I don't</button>
+</div>
+<div id="div28" class="hidden">
+    <button class="55">Yes, I do</button>
+    <button class="56">No, I don't</button>
+</div>
+<div id="div29" class="hidden">
+    <button class="57">Yes, I do</button>
+    <button class="58">No, I don't</button>
+</div>
+<div id="div30" class="hidden">
+    <button class="59">Yes, I do</button>
+    <button class="60">No, I don't</button>
+</div>
+<div id="div31" class="hidden">
+    <button class="61">Take the test again</button>
+</div>
+</form>
+{% endblock %}
+
+{% block menu %}
+<div class="languages">
+  <a class="icon" id="mainlang"><img class="icon-image" src="https://img.icons8.com/color/48/000000/great-britain-circular.png"/></a>
+  <a href="/ru" class="icon" id="otherlang1"><img class="icon-image" src="https://img.icons8.com/fluency/48/000000/russian-federation-circular.png"></a>
+  <a href="/kz" class="icon" id="otherlang2"><img class="icon-image" src="https://img.icons8.com/color/48/000000/kazakhstan-circular.png"/></a>
+</div>
+{% endblock %}
+
+{% block warning %}
+* This test is not a mean of making a diagnosis of diseases. The test is built on the world's available data, the models are retrained every day when new data appears.
+{% endblock %}
+
+{% block news_title %}
+NEWS
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/scriptEnglish.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/faq_style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='css/images/logo.ico') }}" />
+    <title>Тест на COVID-19</title>
+</head>
+<body>
+    <div class="menu">
+      <a href="#"><img class="faq-button" src="https://lh3.googleusercontent.com/proxy/vpjT0cEDM0D2mC9ghIk4d3tqtNeKhWDhsNsby9O9GNqc5JnIq7LSbnaxTLPybGYPnlzQ5ImdqnHK7y3MsZpz29KtFlbPUcasZlxzdHLrlYnIvWc" alt=""> </a>
+    </div>
+    <div class="test">
+      <div class="wrapper">
+        <form action="#" id="submitForm">
+        <h5 id="counter"></h5>
+        <h3 id="main_text"><b>{{ faq_c.q1 }}</b><br>
+          <br>
+          {{ faq_c.a1 }}
+          <br>
+          <br>
+          <b>{{ faq_c.q2 }}</b> <br>
+          <br>
+          {{ faq_c.a2 }}
+          <br>
+          <br>
+          <b>{{ faq_c.q3 }}</b> <br>
+          <br>
+          {{ faq_c.a3 }}
+          <br>
+          <br>
+          <b>{{ faq_c.q4 }}</b>   <br>
+          <br>
+          {{ faq_c.a4 }}
+        </h3>
+        <a href="/{{ faq_c.lg }}" class="submit">{{ faq_c.tomain }}</a>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

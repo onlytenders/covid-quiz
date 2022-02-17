@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block title %}
+Coming soon ...
+{% endblock %}
+
+{% block wrapper %}
+<h3 class="main_text" style="display: flex; width: 80%; height: 100%; justify-content: center; margin: 0 auto; padding-top: 13%;">
+  Жасалып жатқан бет
+</h3>
+{% endblock %}
+
+{% block menu %}
+<div class="languages">
+  <a class="icon" id="mainlang"><img class="icon-image" src="https://img.icons8.com/color/48/000000/kazakhstan-circular.png"></a>
+  <a href="/en" class="icon" id="otherlang1"><img class="icon-image" src="https://img.icons8.com/color/48/000000/great-britain-circular.png"></a>
+  <a href="/ru" class="icon" id="otherlang2"><img class="icon-image" src="https://img.icons8.com/fluency/48/000000/russian-federation-circular.png"></a>
+</div>
+{% endblock %}
+
+{% block warning %}
+*Данный тест не является средством постановки диагноза заболеваний. Тест построен на общемировых доступных данных, модели дообучаются каждый день при появлении новых данных.
+{% endblock %}
+
+{% block news_title %}
+ЖАҢАЛЫҚТАР
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/scriptKazakh.js') }}"></script>
+{% endblock %}
