@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append('/home/c/root/myenv/lib/python3.4/site-packages/')
+sys.path.append('/home/c/root/virtualenv-16.6.0')
 
 from flask import Flask, render_template, url_for, redirect
 import requests
